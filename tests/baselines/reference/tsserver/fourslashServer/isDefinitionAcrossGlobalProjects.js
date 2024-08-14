@@ -111,16 +111,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /a/index.ts ProjectRootPath: undefined:: Result: /a/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /a/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/tsconfig.json 2000 undefined Project: /a/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/a/tsconfig.json",
-        "reason": "Creating possible configured project for /a/index.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /a/tsconfig.json : {
  "rootNames": [
   "/a/index.ts"
@@ -145,6 +135,16 @@ Info seq  [hh:mm:ss:mss] Config: /a/tsconfig.json : {
  ]
 }
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tsconfig.settings.json 2000 undefined Config: /a/tsconfig.json WatchType: Extended config file
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/a/tsconfig.json",
+        "reason": "Creating possible configured project for /a/index.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /a/tsconfig.json
 Info seq  [hh:mm:ss:mss] Config: /b/tsconfig.json : {
  "rootNames": [
@@ -554,7 +554,7 @@ Info seq  [hh:mm:ss:mss] event:
       "type": "event",
       "event": "configFileDiag",
       "body": {
-        "triggerFile": "/b/tsconfig.json",
+        "triggerFile": "/b/index.ts",
         "configFile": "/b/tsconfig.json",
         "diagnostics": []
       }
@@ -608,7 +608,7 @@ Info seq  [hh:mm:ss:mss] event:
       "type": "event",
       "event": "configFileDiag",
       "body": {
-        "triggerFile": "/c/tsconfig.json",
+        "triggerFile": "/c/index.ts",
         "configFile": "/c/tsconfig.json",
         "diagnostics": []
       }

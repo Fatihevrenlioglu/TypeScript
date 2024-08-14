@@ -30,16 +30,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /a/app.js ProjectRootPath: undefined:: Result: /a/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /a/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/tsconfig.json 2000 undefined Project: /a/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/a/tsconfig.json",
-        "reason": "Creating possible configured project for /a/app.js to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /a/tsconfig.json : {
  "rootNames": [
   "/a/app.js",
@@ -51,6 +41,16 @@ Info seq  [hh:mm:ss:mss] Config: /a/tsconfig.json : {
   "configFilePath": "/a/tsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/a/tsconfig.json",
+        "reason": "Creating possible configured project for /a/app.js to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] Non TS file size exceeded limit (20971530). Largest files: /a/largefile.js:20971521, /a/app.js:9, /a/lib.js:9
 Info seq  [hh:mm:ss:mss] event:
     {

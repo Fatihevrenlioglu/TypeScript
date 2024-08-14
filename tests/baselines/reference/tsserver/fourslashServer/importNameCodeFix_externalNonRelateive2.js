@@ -48,16 +48,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /apps/app1/tsconfig.json ProjectRootPath: undefined:: Result: /apps/app1/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /apps/app1/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /apps/app1/tsconfig.json 2000 undefined Project: /apps/app1/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/apps/app1/tsconfig.json",
-        "reason": "Creating possible configured project for /apps/app1/tsconfig.json to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /apps/app1/tsconfig.json : {
  "rootNames": [
   "/apps/app1/src/app.ts",
@@ -77,6 +67,16 @@ Info seq  [hh:mm:ss:mss] Config: /apps/app1/tsconfig.json : {
   "configFilePath": "/apps/app1/tsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/apps/app1/tsconfig.json",
+        "reason": "Creating possible configured project for /apps/app1/tsconfig.json to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /apps/app1/src 1 undefined Config: /apps/app1/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /apps/app1/src 1 undefined Config: /apps/app1/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /shared 1 undefined Config: /apps/app1/tsconfig.json WatchType: Wild card directory

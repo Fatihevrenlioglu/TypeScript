@@ -20,6 +20,14 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /proj/a.ts ProjectRootPath: undefined:: Result: /proj/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /proj/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /proj/tsconfig.json 2000 undefined Project: /proj/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /proj/tsconfig.json : {
+ "rootNames": [
+  "/proj/a.ts"
+ ],
+ "options": {
+  "configFilePath": "/proj/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -30,14 +38,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /proj/a.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /proj/tsconfig.json : {
- "rootNames": [
-  "/proj/a.ts"
- ],
- "options": {
-  "configFilePath": "/proj/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /proj 1 undefined Config: /proj/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /proj 1 undefined Config: /proj/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /proj/tsconfig.json

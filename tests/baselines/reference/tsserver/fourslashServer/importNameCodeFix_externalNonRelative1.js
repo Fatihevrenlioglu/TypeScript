@@ -191,16 +191,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /packages/pkg-1/src/index.ts ProjectRootPath: undefined:: Result: /packages/pkg-1/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /packages/pkg-1/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /packages/pkg-1/tsconfig.json 2000 undefined Project: /packages/pkg-1/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/packages/pkg-1/tsconfig.json",
-        "reason": "Creating possible configured project for /packages/pkg-1/src/index.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /packages/pkg-1/tsconfig.json : {
  "rootNames": [
   "/packages/pkg-1/src/index.ts"
@@ -226,6 +216,16 @@ Info seq  [hh:mm:ss:mss] Config: /packages/pkg-1/tsconfig.json : {
  ]
 }
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tsconfig.base.json 2000 undefined Config: /packages/pkg-1/tsconfig.json WatchType: Extended config file
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/packages/pkg-1/tsconfig.json",
+        "reason": "Creating possible configured project for /packages/pkg-1/src/index.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /packages/pkg-1 1 undefined Config: /packages/pkg-1/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /packages/pkg-1 1 undefined Config: /packages/pkg-1/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /packages/pkg-1/tsconfig.json

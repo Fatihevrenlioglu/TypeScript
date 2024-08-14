@@ -40,16 +40,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /tsconfig.json ProjectRootPath: undefined:: Result: /tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tsconfig.json 2000 undefined Project: /tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/tsconfig.json",
-        "reason": "Creating possible configured project for /tsconfig.json to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /tsconfig.json : {
  "rootNames": [],
  "options": {
@@ -66,7 +56,6 @@ Info seq  [hh:mm:ss:mss] Config: /tsconfig.json : {
   }
  ]
 }
-Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /tsconfig.json
 Info seq  [hh:mm:ss:mss] Config: /tsconfig.build.json : {
  "rootNames": [
   "/index.ts"
@@ -92,31 +81,106 @@ Info seq  [hh:mm:ss:mss] Config: /tsconfig.test.json : {
  }
 }
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tsconfig.test.json 2000 undefined Project: /tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /tsconfig.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info seq  [hh:mm:ss:mss] Project '/tsconfig.json' (Configured)
-Info seq  [hh:mm:ss:mss] 	Files (0)
+Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /tsconfig.json ProjectRootPath: undefined:: Result: undefined
+Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /lib.d.ts 500 undefined WatchType: Closed Script info
+Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /lib.decorators.d.ts 500 undefined WatchType: Closed Script info
+Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /lib.decorators.legacy.d.ts 500 undefined WatchType: Closed Script info
+Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info seq  [hh:mm:ss:mss] Project '/dev/null/inferredProject1*' (Inferred)
+Info seq  [hh:mm:ss:mss] 	Files (4)
+	/lib.d.ts Text-1 lib.d.ts-Text
+	/lib.decorators.d.ts Text-1 lib.decorators.d.ts-Text
+	/lib.decorators.legacy.d.ts Text-1 lib.decorators.legacy.d.ts-Text
+	/tsconfig.json SVC-1-0 "{ \"files\": [], \"references\": [{ \"path\": \"tsconfig.build.json\" }, { \"path\": \"tsconfig.test.json\" }] }"
+
+
+	lib.d.ts
+	  Default library for target 'es5'
+	lib.decorators.d.ts
+	  Library referenced via 'decorators' from file 'lib.d.ts'
+	lib.decorators.legacy.d.ts
+	  Library referenced via 'decorators.legacy' from file 'lib.d.ts'
+	tsconfig.json
+	  Root file specified for compilation
 
 Info seq  [hh:mm:ss:mss] -----------------------------------------------
-Info seq  [hh:mm:ss:mss] event:
+Info seq  [hh:mm:ss:mss] Project '/tsconfig.json' (Configured)
+Info seq  [hh:mm:ss:mss] 	Files (0) InitialLoadPending
+
+Info seq  [hh:mm:ss:mss] -----------------------------------------------
+Info seq  [hh:mm:ss:mss] Project '/dev/null/inferredProject1*' (Inferred)
+Info seq  [hh:mm:ss:mss] 	Files (4)
+
+Info seq  [hh:mm:ss:mss] -----------------------------------------------
+Info seq  [hh:mm:ss:mss] Open files: 
+Info seq  [hh:mm:ss:mss] 	FileName: /tsconfig.json ProjectRootPath: undefined
+Info seq  [hh:mm:ss:mss] 		Projects: /dev/null/inferredProject1*
+Info seq  [hh:mm:ss:mss] response:
     {
       "seq": 0,
-      "type": "event",
-      "event": "projectLoadingFinish",
-      "body": {
-        "projectName": "/tsconfig.json"
+      "type": "response",
+      "command": "open",
+      "request_seq": 0,
+      "success": true,
+      "performanceData": {
+        "updateGraphDurationMs": *
       }
     }
-Info seq  [hh:mm:ss:mss] event:
+After Request
+watchedFiles::
+/lib.d.ts: *new*
+  {"pollingInterval":500}
+/lib.decorators.d.ts: *new*
+  {"pollingInterval":500}
+/lib.decorators.legacy.d.ts: *new*
+  {"pollingInterval":500}
+/tsconfig.build.json: *new*
+  {"pollingInterval":2000}
+/tsconfig.json: *new*
+  {"pollingInterval":2000}
+/tsconfig.test.json: *new*
+  {"pollingInterval":2000}
+
+Projects::
+/dev/null/inferredProject1* (Inferred) *new*
+    projectStateVersion: 1
+    projectProgramVersion: 1
+/tsconfig.json (Configured) *new*
+    projectStateVersion: 1
+    projectProgramVersion: 0
+    dirty: true
+    initialLoadPending: true
+    noOpenRef: true
+
+ScriptInfos::
+/lib.d.ts *new*
+    version: Text-1
+    containingProjects: 1
+        /dev/null/inferredProject1*
+/lib.decorators.d.ts *new*
+    version: Text-1
+    containingProjects: 1
+        /dev/null/inferredProject1*
+/lib.decorators.legacy.d.ts *new*
+    version: Text-1
+    containingProjects: 1
+        /dev/null/inferredProject1*
+/tsconfig.json (Open) *new*
+    version: SVC-1-0
+    containingProjects: 1
+        /dev/null/inferredProject1* *default*
+
+Info seq  [hh:mm:ss:mss] request:
     {
-      "seq": 0,
-      "type": "event",
-      "event": "configFileDiag",
-      "body": {
-        "triggerFile": "/tsconfig.json",
-        "configFile": "/tsconfig.json",
-        "diagnostics": []
-      }
+      "seq": 1,
+      "type": "request",
+      "arguments": {
+        "file": "/index.ts"
+      },
+      "command": "open"
     }
+Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /index.ts ProjectRootPath: undefined:: Result: /tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /tsconfig.build.json
 Info seq  [hh:mm:ss:mss] event:
     {
@@ -125,15 +189,11 @@ Info seq  [hh:mm:ss:mss] event:
       "event": "projectLoadingStart",
       "body": {
         "projectName": "/tsconfig.build.json",
-        "reason": "Creating project referenced in solution /tsconfig.json to find possible configured project for /tsconfig.json to open"
+        "reason": "Creating project referenced in solution /tsconfig.json to find possible configured project for /index.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /index.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /tsconfig.build.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /util.ts 500 undefined WatchType: Closed Script info
-Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /lib.d.ts 500 undefined WatchType: Closed Script info
-Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /lib.decorators.d.ts 500 undefined WatchType: Closed Script info
-Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /lib.decorators.legacy.d.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /tsconfig.build.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
 Info seq  [hh:mm:ss:mss] Project '/tsconfig.build.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (5)
@@ -141,7 +201,7 @@ Info seq  [hh:mm:ss:mss] 	Files (5)
 	/lib.decorators.d.ts Text-1 lib.decorators.d.ts-Text
 	/lib.decorators.legacy.d.ts Text-1 lib.decorators.legacy.d.ts-Text
 	/util.ts Text-1 "export {}"
-	/index.ts Text-1 "export * from \"./util\";"
+	/index.ts SVC-1-0 "export * from \"./util\";"
 
 
 	lib.d.ts
@@ -171,7 +231,7 @@ Info seq  [hh:mm:ss:mss] event:
       "type": "event",
       "event": "configFileDiag",
       "body": {
-        "triggerFile": "/tsconfig.json",
+        "triggerFile": "/index.ts",
         "configFile": "/tsconfig.build.json",
         "diagnostics": [
           {
@@ -200,6 +260,104 @@ Info seq  [hh:mm:ss:mss] event:
         ]
       }
     }
+Info seq  [hh:mm:ss:mss] Project '/tsconfig.json' (Configured)
+Info seq  [hh:mm:ss:mss] 	Files (0) InitialLoadPending
+
+Info seq  [hh:mm:ss:mss] -----------------------------------------------
+Info seq  [hh:mm:ss:mss] Project '/tsconfig.build.json' (Configured)
+Info seq  [hh:mm:ss:mss] 	Files (5)
+
+Info seq  [hh:mm:ss:mss] -----------------------------------------------
+Info seq  [hh:mm:ss:mss] Project '/dev/null/inferredProject1*' (Inferred)
+Info seq  [hh:mm:ss:mss] 	Files (4)
+
+Info seq  [hh:mm:ss:mss] -----------------------------------------------
+Info seq  [hh:mm:ss:mss] Open files: 
+Info seq  [hh:mm:ss:mss] 	FileName: /tsconfig.json ProjectRootPath: undefined
+Info seq  [hh:mm:ss:mss] 		Projects: /dev/null/inferredProject1*
+Info seq  [hh:mm:ss:mss] 	FileName: /index.ts ProjectRootPath: undefined
+Info seq  [hh:mm:ss:mss] 		Projects: /tsconfig.build.json
+Info seq  [hh:mm:ss:mss] response:
+    {
+      "seq": 0,
+      "type": "response",
+      "command": "open",
+      "request_seq": 1,
+      "success": true,
+      "performanceData": {
+        "updateGraphDurationMs": *
+      }
+    }
+After Request
+watchedFiles::
+/lib.d.ts:
+  {"pollingInterval":500}
+/lib.decorators.d.ts:
+  {"pollingInterval":500}
+/lib.decorators.legacy.d.ts:
+  {"pollingInterval":500}
+/tsconfig.build.json:
+  {"pollingInterval":2000}
+/tsconfig.json:
+  {"pollingInterval":2000}
+/tsconfig.test.json:
+  {"pollingInterval":2000}
+/util.ts: *new*
+  {"pollingInterval":500}
+
+Projects::
+/dev/null/inferredProject1* (Inferred)
+    projectStateVersion: 1
+    projectProgramVersion: 1
+/tsconfig.build.json (Configured) *new*
+    projectStateVersion: 1
+    projectProgramVersion: 1
+/tsconfig.json (Configured) *changed*
+    projectStateVersion: 1
+    projectProgramVersion: 0
+    dirty: true
+    initialLoadPending: true
+    noOpenRef: false *changed*
+
+ScriptInfos::
+/index.ts (Open) *new*
+    version: SVC-1-0
+    containingProjects: 1
+        /tsconfig.build.json *default*
+/lib.d.ts *changed*
+    version: Text-1
+    containingProjects: 2 *changed*
+        /dev/null/inferredProject1*
+        /tsconfig.build.json *new*
+/lib.decorators.d.ts *changed*
+    version: Text-1
+    containingProjects: 2 *changed*
+        /dev/null/inferredProject1*
+        /tsconfig.build.json *new*
+/lib.decorators.legacy.d.ts *changed*
+    version: Text-1
+    containingProjects: 2 *changed*
+        /dev/null/inferredProject1*
+        /tsconfig.build.json *new*
+/tsconfig.json (Open)
+    version: SVC-1-0
+    containingProjects: 1
+        /dev/null/inferredProject1* *default*
+/util.ts *new*
+    version: Text-1
+    containingProjects: 1
+        /tsconfig.build.json
+
+Info seq  [hh:mm:ss:mss] request:
+    {
+      "seq": 2,
+      "type": "request",
+      "arguments": {
+        "file": "/test.ts"
+      },
+      "command": "open"
+    }
+Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /test.ts ProjectRootPath: undefined:: Result: /tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /tsconfig.test.json
 Info seq  [hh:mm:ss:mss] event:
     {
@@ -208,10 +366,9 @@ Info seq  [hh:mm:ss:mss] event:
       "event": "projectLoadingStart",
       "body": {
         "projectName": "/tsconfig.test.json",
-        "reason": "Creating project referenced in solution /tsconfig.json to find possible configured project for /tsconfig.json to open"
+        "reason": "Creating project referenced in solution /tsconfig.json to find possible configured project for /test.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /test.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /tsconfig.test.json
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /tsconfig.test.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
 Info seq  [hh:mm:ss:mss] Project '/tsconfig.test.json' (Configured)
@@ -220,8 +377,8 @@ Info seq  [hh:mm:ss:mss] 	Files (6)
 	/lib.decorators.d.ts Text-1 lib.decorators.d.ts-Text
 	/lib.decorators.legacy.d.ts Text-1 lib.decorators.legacy.d.ts-Text
 	/util.ts Text-1 "export {}"
-	/test.ts Text-1 "import \"./util\";"
-	/index.ts Text-1 "export * from \"./util\";"
+	/test.ts SVC-1-0 "import \"./util\";"
+	/index.ts SVC-1-0 "export * from \"./util\";"
 
 
 	lib.d.ts
@@ -254,7 +411,7 @@ Info seq  [hh:mm:ss:mss] event:
       "type": "event",
       "event": "configFileDiag",
       "body": {
-        "triggerFile": "/tsconfig.json",
+        "triggerFile": "/test.ts",
         "configFile": "/tsconfig.test.json",
         "diagnostics": [
           {
@@ -306,29 +463,8 @@ Info seq  [hh:mm:ss:mss] event:
         ]
       }
     }
-Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /tsconfig.json ProjectRootPath: undefined:: Result: undefined
-Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
-Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info seq  [hh:mm:ss:mss] Project '/dev/null/inferredProject1*' (Inferred)
-Info seq  [hh:mm:ss:mss] 	Files (4)
-	/lib.d.ts Text-1 lib.d.ts-Text
-	/lib.decorators.d.ts Text-1 lib.decorators.d.ts-Text
-	/lib.decorators.legacy.d.ts Text-1 lib.decorators.legacy.d.ts-Text
-	/tsconfig.json SVC-1-0 "{ \"files\": [], \"references\": [{ \"path\": \"tsconfig.build.json\" }, { \"path\": \"tsconfig.test.json\" }] }"
-
-
-	lib.d.ts
-	  Default library for target 'es5'
-	lib.decorators.d.ts
-	  Library referenced via 'decorators' from file 'lib.d.ts'
-	lib.decorators.legacy.d.ts
-	  Library referenced via 'decorators.legacy' from file 'lib.d.ts'
-	tsconfig.json
-	  Root file specified for compilation
-
-Info seq  [hh:mm:ss:mss] -----------------------------------------------
 Info seq  [hh:mm:ss:mss] Project '/tsconfig.json' (Configured)
-Info seq  [hh:mm:ss:mss] 	Files (0)
+Info seq  [hh:mm:ss:mss] 	Files (0) InitialLoadPending
 
 Info seq  [hh:mm:ss:mss] -----------------------------------------------
 Info seq  [hh:mm:ss:mss] Project '/tsconfig.build.json' (Configured)
@@ -346,96 +482,79 @@ Info seq  [hh:mm:ss:mss] -----------------------------------------------
 Info seq  [hh:mm:ss:mss] Open files: 
 Info seq  [hh:mm:ss:mss] 	FileName: /tsconfig.json ProjectRootPath: undefined
 Info seq  [hh:mm:ss:mss] 		Projects: /dev/null/inferredProject1*
+Info seq  [hh:mm:ss:mss] 	FileName: /index.ts ProjectRootPath: undefined
+Info seq  [hh:mm:ss:mss] 		Projects: /tsconfig.build.json,/tsconfig.test.json
+Info seq  [hh:mm:ss:mss] 	FileName: /test.ts ProjectRootPath: undefined
+Info seq  [hh:mm:ss:mss] 		Projects: /tsconfig.test.json
 Info seq  [hh:mm:ss:mss] response:
     {
       "seq": 0,
       "type": "response",
       "command": "open",
-      "request_seq": 0,
+      "request_seq": 2,
       "success": true,
       "performanceData": {
         "updateGraphDurationMs": *
       }
     }
 After Request
-watchedFiles::
-/index.ts: *new*
-  {"pollingInterval":500}
-/lib.d.ts: *new*
-  {"pollingInterval":500}
-/lib.decorators.d.ts: *new*
-  {"pollingInterval":500}
-/lib.decorators.legacy.d.ts: *new*
-  {"pollingInterval":500}
-/test.ts: *new*
-  {"pollingInterval":500}
-/tsconfig.build.json: *new*
-  {"pollingInterval":2000}
-/tsconfig.json: *new*
-  {"pollingInterval":2000}
-/tsconfig.test.json: *new*
-  {"pollingInterval":2000}
-/util.ts: *new*
-  {"pollingInterval":500}
-
 Projects::
-/dev/null/inferredProject1* (Inferred) *new*
+/dev/null/inferredProject1* (Inferred)
     projectStateVersion: 1
     projectProgramVersion: 1
-/tsconfig.build.json (Configured) *new*
+/tsconfig.build.json (Configured)
     projectStateVersion: 1
     projectProgramVersion: 1
-    noOpenRef: true
-/tsconfig.json (Configured) *new*
+/tsconfig.json (Configured)
     projectStateVersion: 1
-    projectProgramVersion: 1
-    noOpenRef: true
+    projectProgramVersion: 0
+    dirty: true
+    initialLoadPending: true
 /tsconfig.test.json (Configured) *new*
     projectStateVersion: 1
     projectProgramVersion: 1
-    noOpenRef: true
 
 ScriptInfos::
-/index.ts *new*
+/index.ts (Open) *changed*
+    version: SVC-1-0
+    containingProjects: 2 *changed*
+        /tsconfig.build.json *default*
+        /tsconfig.test.json *new*
+/lib.d.ts *changed*
     version: Text-1
-    containingProjects: 2
-        /tsconfig.build.json
-        /tsconfig.test.json
-/lib.d.ts *new*
-    version: Text-1
-    containingProjects: 3
-        /tsconfig.build.json
-        /tsconfig.test.json
+    containingProjects: 3 *changed*
         /dev/null/inferredProject1*
-/lib.decorators.d.ts *new*
-    version: Text-1
-    containingProjects: 3
         /tsconfig.build.json
-        /tsconfig.test.json
-        /dev/null/inferredProject1*
-/lib.decorators.legacy.d.ts *new*
+        /tsconfig.test.json *new*
+/lib.decorators.d.ts *changed*
     version: Text-1
-    containingProjects: 3
+    containingProjects: 3 *changed*
+        /dev/null/inferredProject1*
         /tsconfig.build.json
-        /tsconfig.test.json
-        /dev/null/inferredProject1*
-/test.ts *new*
+        /tsconfig.test.json *new*
+/lib.decorators.legacy.d.ts *changed*
     version: Text-1
+    containingProjects: 3 *changed*
+        /dev/null/inferredProject1*
+        /tsconfig.build.json
+        /tsconfig.test.json *new*
+/test.ts (Open) *new*
+    version: SVC-1-0
     containingProjects: 1
-        /tsconfig.test.json
-/tsconfig.json (Open) *new*
+        /tsconfig.test.json *default*
+/tsconfig.json (Open)
     version: SVC-1-0
     containingProjects: 1
         /dev/null/inferredProject1* *default*
-/util.ts *new*
+/util.ts *changed*
     version: Text-1
-    containingProjects: 2
+    containingProjects: 2 *changed*
         /tsconfig.build.json
-        /tsconfig.test.json
+        /tsconfig.test.json *new*
 
 Info seq  [hh:mm:ss:mss] request:
     {
-      "seq": 1,
+      "seq": 3,
       "type": "request",
       "arguments": {
         "file": "/util.ts"
@@ -447,7 +566,7 @@ Info seq  [hh:mm:ss:mss] response:
       "seq": 0,
       "type": "response",
       "command": "fileReferences",
-      "request_seq": 1,
+      "request_seq": 3,
       "success": true,
       "body": {
         "refs": [

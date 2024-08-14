@@ -59,16 +59,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /common/tsconfig.json ProjectRootPath: undefined:: Result: /common/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /common/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /common/tsconfig.json 2000 undefined Project: /common/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/common/tsconfig.json",
-        "reason": "Creating possible configured project for /common/tsconfig.json to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /common/tsconfig.json : {
  "rootNames": [
   "/common/src/MyModule.ts"
@@ -82,52 +72,11 @@ Info seq  [hh:mm:ss:mss] Config: /common/tsconfig.json : {
 }
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /common/src 1 undefined Config: /common/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /common/src 1 undefined Config: /common/tsconfig.json WatchType: Wild card directory
-Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /common/src/MyModule.ts 500 undefined WatchType: Closed Script info
-Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /common/tsconfig.json
+Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /common/tsconfig.json ProjectRootPath: undefined:: Result: undefined
+Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /lib.d.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /lib.decorators.d.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /lib.decorators.legacy.d.ts 500 undefined WatchType: Closed Script info
-Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /common/tsconfig.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info seq  [hh:mm:ss:mss] Project '/common/tsconfig.json' (Configured)
-Info seq  [hh:mm:ss:mss] 	Files (4)
-	/lib.d.ts Text-1 lib.d.ts-Text
-	/lib.decorators.d.ts Text-1 lib.decorators.d.ts-Text
-	/lib.decorators.legacy.d.ts Text-1 lib.decorators.legacy.d.ts-Text
-	/common/src/MyModule.ts Text-1 "export function square(n: number) {\n  return n * 2;\n}"
-
-
-	../lib.d.ts
-	  Default library for target 'es5'
-	../lib.decorators.d.ts
-	  Library referenced via 'decorators' from file '../lib.d.ts'
-	../lib.decorators.legacy.d.ts
-	  Library referenced via 'decorators.legacy' from file '../lib.d.ts'
-	src/MyModule.ts
-	  Matched by include pattern 'src' in 'tsconfig.json'
-
-Info seq  [hh:mm:ss:mss] -----------------------------------------------
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingFinish",
-      "body": {
-        "projectName": "/common/tsconfig.json"
-      }
-    }
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "configFileDiag",
-      "body": {
-        "triggerFile": "/common/tsconfig.json",
-        "configFile": "/common/tsconfig.json",
-        "diagnostics": []
-      }
-    }
-Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /common/tsconfig.json ProjectRootPath: undefined:: Result: undefined
-Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
 Info seq  [hh:mm:ss:mss] Project '/dev/null/inferredProject1*' (Inferred)
 Info seq  [hh:mm:ss:mss] 	Files (4)
@@ -148,7 +97,7 @@ Info seq  [hh:mm:ss:mss] 	Files (4)
 
 Info seq  [hh:mm:ss:mss] -----------------------------------------------
 Info seq  [hh:mm:ss:mss] Project '/common/tsconfig.json' (Configured)
-Info seq  [hh:mm:ss:mss] 	Files (4)
+Info seq  [hh:mm:ss:mss] 	Files (0) InitialLoadPending
 
 Info seq  [hh:mm:ss:mss] -----------------------------------------------
 Info seq  [hh:mm:ss:mss] Project '/dev/null/inferredProject1*' (Inferred)
@@ -171,8 +120,6 @@ Info seq  [hh:mm:ss:mss] response:
     }
 After Request
 watchedFiles::
-/common/src/MyModule.ts: *new*
-  {"pollingInterval":500}
 /common/tsconfig.json: *new*
   {"pollingInterval":2000}
 /lib.d.ts: *new*
@@ -189,35 +136,30 @@ watchedDirectoriesRecursive::
 Projects::
 /common/tsconfig.json (Configured) *new*
     projectStateVersion: 1
-    projectProgramVersion: 1
+    projectProgramVersion: 0
+    dirty: true
+    initialLoadPending: true
     noOpenRef: true
 /dev/null/inferredProject1* (Inferred) *new*
     projectStateVersion: 1
     projectProgramVersion: 1
 
 ScriptInfos::
-/common/src/MyModule.ts *new*
-    version: Text-1
-    containingProjects: 1
-        /common/tsconfig.json
 /common/tsconfig.json (Open) *new*
     version: SVC-1-0
     containingProjects: 1
         /dev/null/inferredProject1* *default*
 /lib.d.ts *new*
     version: Text-1
-    containingProjects: 2
-        /common/tsconfig.json
+    containingProjects: 1
         /dev/null/inferredProject1*
 /lib.decorators.d.ts *new*
     version: Text-1
-    containingProjects: 2
-        /common/tsconfig.json
+    containingProjects: 1
         /dev/null/inferredProject1*
 /lib.decorators.legacy.d.ts *new*
     version: Text-1
-    containingProjects: 2
-        /common/tsconfig.json
+    containingProjects: 1
         /dev/null/inferredProject1*
 
 Info seq  [hh:mm:ss:mss] request:
@@ -232,16 +174,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /web/src/Helper.ts ProjectRootPath: undefined:: Result: /web/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /web/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /web/tsconfig.json 2000 undefined Project: /web/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/web/tsconfig.json",
-        "reason": "Creating possible configured project for /web/src/Helper.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /web/tsconfig.json : {
  "rootNames": [
   "/web/src/Helper.ts",
@@ -266,10 +198,21 @@ Info seq  [hh:mm:ss:mss] Config: /web/tsconfig.json : {
   }
  ]
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/web/tsconfig.json",
+        "reason": "Creating possible configured project for /web/src/Helper.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /web/src 1 undefined Config: /web/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /web/src 1 undefined Config: /web/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /web/src/MyApp.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /web/tsconfig.json
+Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /common/src/MyModule.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /common/dist/src 1 undefined Project: /web/tsconfig.json WatchType: Failed Lookup Locations
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /common/dist/src 1 undefined Project: /web/tsconfig.json WatchType: Failed Lookup Locations
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /web/tsconfig.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
@@ -318,7 +261,7 @@ Info seq  [hh:mm:ss:mss] event:
       }
     }
 Info seq  [hh:mm:ss:mss] Project '/common/tsconfig.json' (Configured)
-Info seq  [hh:mm:ss:mss] 	Files (4)
+Info seq  [hh:mm:ss:mss] 	Files (0) InitialLoadPending
 
 Info seq  [hh:mm:ss:mss] -----------------------------------------------
 Info seq  [hh:mm:ss:mss] Project '/web/tsconfig.json' (Configured)
@@ -347,7 +290,7 @@ Info seq  [hh:mm:ss:mss] response:
     }
 After Request
 watchedFiles::
-/common/src/MyModule.ts:
+/common/src/MyModule.ts: *new*
   {"pollingInterval":500}
 /common/tsconfig.json:
   {"pollingInterval":2000}
@@ -373,7 +316,9 @@ watchedDirectoriesRecursive::
 Projects::
 /common/tsconfig.json (Configured) *changed*
     projectStateVersion: 1
-    projectProgramVersion: 1
+    projectProgramVersion: 0
+    dirty: true
+    initialLoadPending: true
     noOpenRef: false *changed*
 /dev/null/inferredProject1* (Inferred)
     projectStateVersion: 1
@@ -383,31 +328,27 @@ Projects::
     projectProgramVersion: 1
 
 ScriptInfos::
-/common/src/MyModule.ts *changed*
+/common/src/MyModule.ts *new*
     version: Text-1
-    containingProjects: 2 *changed*
-        /common/tsconfig.json
-        /web/tsconfig.json *new*
+    containingProjects: 1
+        /web/tsconfig.json
 /common/tsconfig.json (Open)
     version: SVC-1-0
     containingProjects: 1
         /dev/null/inferredProject1* *default*
 /lib.d.ts *changed*
     version: Text-1
-    containingProjects: 3 *changed*
-        /common/tsconfig.json
+    containingProjects: 2 *changed*
         /dev/null/inferredProject1*
         /web/tsconfig.json *new*
 /lib.decorators.d.ts *changed*
     version: Text-1
-    containingProjects: 3 *changed*
-        /common/tsconfig.json
+    containingProjects: 2 *changed*
         /dev/null/inferredProject1*
         /web/tsconfig.json *new*
 /lib.decorators.legacy.d.ts *changed*
     version: Text-1
-    containingProjects: 3 *changed*
-        /common/tsconfig.json
+    containingProjects: 2 *changed*
         /dev/null/inferredProject1*
         /web/tsconfig.json *new*
 /web/src/Helper.ts (Open) *new*

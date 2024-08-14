@@ -60,16 +60,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /user/username/projects/myproject/app1/app.ts ProjectRootPath: undefined:: Result: /user/username/projects/myproject/app1/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /user/username/projects/myproject/app1/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/app1/tsconfig.json 2000 undefined Project: /user/username/projects/myproject/app1/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/user/username/projects/myproject/app1/tsconfig.json",
-        "reason": "Creating possible configured project for /user/username/projects/myproject/app1/app.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /user/username/projects/myproject/app1/tsconfig.json : {
  "rootNames": [
   "/user/username/projects/myproject/app1/app.ts",
@@ -80,6 +70,16 @@ Info seq  [hh:mm:ss:mss] Config: /user/username/projects/myproject/app1/tsconfig
   "configFilePath": "/user/username/projects/myproject/app1/tsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/user/username/projects/myproject/app1/tsconfig.json",
+        "reason": "Creating possible configured project for /user/username/projects/myproject/app1/app.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/core/core.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /user/username/projects/myproject/app1/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined WatchType: Closed Script info
@@ -237,16 +237,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /user/username/projects/myproject/app2/app.ts ProjectRootPath: undefined:: Result: /user/username/projects/myproject/app2/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /user/username/projects/myproject/app2/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/app2/tsconfig.json 2000 undefined Project: /user/username/projects/myproject/app2/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/user/username/projects/myproject/app2/tsconfig.json",
-        "reason": "Creating possible configured project for /user/username/projects/myproject/app2/app.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /user/username/projects/myproject/app2/tsconfig.json : {
  "rootNames": [
   "/user/username/projects/myproject/app2/app.ts",
@@ -257,6 +247,16 @@ Info seq  [hh:mm:ss:mss] Config: /user/username/projects/myproject/app2/tsconfig
   "configFilePath": "/user/username/projects/myproject/app2/tsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/user/username/projects/myproject/app2/tsconfig.json",
+        "reason": "Creating possible configured project for /user/username/projects/myproject/app2/app.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /user/username/projects/myproject/app2/tsconfig.json
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/app2/node_modules/@types 1 undefined Project: /user/username/projects/myproject/app2/tsconfig.json WatchType: Type roots
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/app2/node_modules/@types 1 undefined Project: /user/username/projects/myproject/app2/tsconfig.json WatchType: Type roots

@@ -27,6 +27,15 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: C:/a/f1.ts ProjectRootPath: undefined:: Result: C:/a/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project C:/a/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: C:/a/tsconfig.json 2000 undefined Project: C:/a/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: C:/a/tsconfig.json : {
+ "rootNames": [
+  "C:/a/f1.ts"
+ ],
+ "options": {
+  "outDir": "C:/a/b",
+  "configFilePath": "C:/a/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -37,15 +46,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for C:/a/f1.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: C:/a/tsconfig.json : {
- "rootNames": [
-  "C:/a/f1.ts"
- ],
- "options": {
-  "outDir": "C:/a/b",
-  "configFilePath": "C:/a/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: C:/a 0 undefined Config: C:/a/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: C:/a 0 undefined Config: C:/a/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: C:/a/tsconfig.json

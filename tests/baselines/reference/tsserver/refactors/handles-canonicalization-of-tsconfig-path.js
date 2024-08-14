@@ -20,6 +20,14 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /Foo/a.ts ProjectRootPath: undefined:: Result: /Foo/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /Foo/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /Foo/tsconfig.json 2000 undefined Project: /Foo/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /Foo/tsconfig.json : {
+ "rootNames": [
+  "/Foo/a.ts"
+ ],
+ "options": {
+  "configFilePath": "/Foo/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -30,14 +38,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /Foo/a.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /Foo/tsconfig.json : {
- "rootNames": [
-  "/Foo/a.ts"
- ],
- "options": {
-  "configFilePath": "/Foo/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /Foo/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /Foo/tsconfig.json WatchType: Missing file
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /Foo/tsconfig.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms

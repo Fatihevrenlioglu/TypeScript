@@ -33,6 +33,15 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /referencesForGlobals_1.ts ProjectRootPath: undefined:: Result: /tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tsconfig.json 2000 undefined Project: /tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /tsconfig.json : {
+ "rootNames": [
+  "/referencesForGlobals_1.ts",
+  "/referencesForGlobals_2.ts"
+ ],
+ "options": {
+  "configFilePath": "/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -43,15 +52,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /referencesForGlobals_1.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /tsconfig.json : {
- "rootNames": [
-  "/referencesForGlobals_1.ts",
-  "/referencesForGlobals_2.ts"
- ],
- "options": {
-  "configFilePath": "/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /referencesForGlobals_2.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /lib.d.ts 500 undefined WatchType: Closed Script info

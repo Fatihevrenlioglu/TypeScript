@@ -203,16 +203,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /tests/cases/fourslash/server/buttonClass/Source.ts ProjectRootPath: undefined:: Result: /tests/cases/fourslash/server/buttonClass/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /tests/cases/fourslash/server/buttonClass/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tests/cases/fourslash/server/buttonClass/tsconfig.json 2000 undefined Project: /tests/cases/fourslash/server/buttonClass/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/tests/cases/fourslash/server/buttonClass/tsconfig.json",
-        "reason": "Creating possible configured project for /tests/cases/fourslash/server/buttonClass/Source.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /tests/cases/fourslash/server/buttonClass/tsconfig.json : {
  "rootNames": [
   "/tests/cases/fourslash/server/buttonClass/Source.ts",
@@ -227,6 +217,16 @@ Info seq  [hh:mm:ss:mss] Config: /tests/cases/fourslash/server/buttonClass/tscon
  }
 }
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tests/cases/fourslash/server/tsbase.json 2000 undefined Config: /tests/cases/fourslash/server/buttonClass/tsconfig.json WatchType: Extended config file
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/tests/cases/fourslash/server/buttonClass/tsconfig.json",
+        "reason": "Creating possible configured project for /tests/cases/fourslash/server/buttonClass/Source.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] FileWatcher:: Close:: WatchInfo: /tests/cases/fourslash/server/BaseClass/tsconfig.json 2000 undefined WatchType: Config file for the inferred project root
 Info seq  [hh:mm:ss:mss] FileWatcher:: Close:: WatchInfo: /tests/cases/fourslash/server/BaseClass/jsconfig.json 2000 undefined WatchType: Config file for the inferred project root
 Info seq  [hh:mm:ss:mss] FileWatcher:: Close:: WatchInfo: /tests/cases/fourslash/server/tsconfig.json 2000 undefined WatchType: Config file for the inferred project root

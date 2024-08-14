@@ -50,6 +50,15 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /user/username/projects/myproject/a/a.ts ProjectRootPath: undefined:: Result: /user/username/projects/myproject/a/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /user/username/projects/myproject/a/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/a/tsconfig.json 2000 undefined Project: /user/username/projects/myproject/a/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /user/username/projects/myproject/a/tsconfig.json : {
+ "rootNames": [
+  "/user/username/projects/myproject/a/a.ts"
+ ],
+ "options": {
+  "configFilePath": "/user/username/projects/myproject/a/tsconfig.json"
+ }
+}
+Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/extended/alpha.tsconfig.json 2000 undefined Config: /user/username/projects/myproject/a/tsconfig.json WatchType: Extended config file
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -60,15 +69,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /user/username/projects/myproject/a/a.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /user/username/projects/myproject/a/tsconfig.json : {
- "rootNames": [
-  "/user/username/projects/myproject/a/a.ts"
- ],
- "options": {
-  "configFilePath": "/user/username/projects/myproject/a/tsconfig.json"
- }
-}
-Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/extended/alpha.tsconfig.json 2000 undefined Config: /user/username/projects/myproject/a/tsconfig.json WatchType: Extended config file
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /user/username/projects/myproject/a/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /user/username/projects/myproject/a/tsconfig.json WatchType: Missing file
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/a/node_modules/@types 1 undefined Project: /user/username/projects/myproject/a/tsconfig.json WatchType: Type roots
@@ -255,6 +255,15 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /user/username/projects/myproject/b/b.ts ProjectRootPath: undefined:: Result: /user/username/projects/myproject/b/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /user/username/projects/myproject/b/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/b/tsconfig.json 2000 undefined Project: /user/username/projects/myproject/b/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /user/username/projects/myproject/b/tsconfig.json : {
+ "rootNames": [
+  "/user/username/projects/myproject/b/b.ts"
+ ],
+ "options": {
+  "configFilePath": "/user/username/projects/myproject/b/tsconfig.json"
+ }
+}
+Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/extended/bravo.tsconfig.json 2000 undefined Config: /user/username/projects/myproject/b/tsconfig.json WatchType: Extended config file
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -265,15 +274,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /user/username/projects/myproject/b/b.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /user/username/projects/myproject/b/tsconfig.json : {
- "rootNames": [
-  "/user/username/projects/myproject/b/b.ts"
- ],
- "options": {
-  "configFilePath": "/user/username/projects/myproject/b/tsconfig.json"
- }
-}
-Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/extended/bravo.tsconfig.json 2000 undefined Config: /user/username/projects/myproject/b/tsconfig.json WatchType: Extended config file
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /user/username/projects/myproject/b/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /user/username/projects/myproject/b/tsconfig.json WatchType: Missing file
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/b/node_modules/@types 1 undefined Project: /user/username/projects/myproject/b/tsconfig.json WatchType: Type roots
@@ -479,6 +479,14 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /user/username/projects/myproject/dummy/dummy.ts ProjectRootPath: undefined:: Result: /user/username/projects/myproject/dummy/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /user/username/projects/myproject/dummy/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/dummy/tsconfig.json 2000 undefined Project: /user/username/projects/myproject/dummy/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /user/username/projects/myproject/dummy/tsconfig.json : {
+ "rootNames": [
+  "/user/username/projects/myproject/dummy/dummy.ts"
+ ],
+ "options": {
+  "configFilePath": "/user/username/projects/myproject/dummy/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -489,14 +497,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /user/username/projects/myproject/dummy/dummy.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /user/username/projects/myproject/dummy/tsconfig.json : {
- "rootNames": [
-  "/user/username/projects/myproject/dummy/dummy.ts"
- ],
- "options": {
-  "configFilePath": "/user/username/projects/myproject/dummy/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/dummy 1 undefined Config: /user/username/projects/myproject/dummy/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/dummy 1 undefined Config: /user/username/projects/myproject/dummy/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /user/username/projects/myproject/dummy/tsconfig.json

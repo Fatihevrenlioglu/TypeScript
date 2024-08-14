@@ -28,6 +28,15 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /a.ts ProjectRootPath: undefined:: Result: /tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tsconfig.json 2000 undefined Project: /tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /tsconfig.json : {
+ "rootNames": [
+  "/a.ts",
+  "/b.ts"
+ ],
+ "options": {
+  "configFilePath": "/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -38,15 +47,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /a.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /tsconfig.json : {
- "rootNames": [
-  "/a.ts",
-  "/b.ts"
- ],
- "options": {
-  "configFilePath": "/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /b.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file

@@ -99,16 +99,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /home/src/workspaces/projects/server/src/server.ts ProjectRootPath: undefined:: Result: /home/src/workspaces/projects/server/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /home/src/workspaces/projects/server/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /home/src/workspaces/projects/server/tsconfig.json 2000 undefined Project: /home/src/workspaces/projects/server/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/home/src/workspaces/projects/server/tsconfig.json",
-        "reason": "Creating possible configured project for /home/src/workspaces/projects/server/src/server.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /home/src/workspaces/projects/server/tsconfig.json : {
  "rootNames": [
   "/home/src/workspaces/projects/shared/src/logging.ts",
@@ -137,6 +127,16 @@ Info seq  [hh:mm:ss:mss] Config: /home/src/workspaces/projects/server/tsconfig.j
  ]
 }
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /home/src/workspaces/tsconfig.json 2000 undefined Config: /home/src/workspaces/projects/server/tsconfig.json WatchType: Extended config file
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/home/src/workspaces/projects/server/tsconfig.json",
+        "reason": "Creating possible configured project for /home/src/workspaces/projects/server/src/server.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /home/src/workspaces/projects/shared/src 1 undefined Config: /home/src/workspaces/projects/server/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /home/src/workspaces/projects/shared/src 1 undefined Config: /home/src/workspaces/projects/server/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /home/src/workspaces/projects/server/src 1 undefined Config: /home/src/workspaces/projects/server/tsconfig.json WatchType: Wild card directory

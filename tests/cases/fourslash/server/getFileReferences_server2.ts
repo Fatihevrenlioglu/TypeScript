@@ -1,4 +1,4 @@
-/// <reference path="../fourslash.ts" />
+ /// <reference path="../fourslash.ts" />
 
 // @Filename: /tsconfig.json
 //// { "files": [], "references": [{ "path": "packages/server" }, { "path": "packages/client" }] }
@@ -24,4 +24,6 @@
 // @Filename: /packages/client/index.ts
 //// import "@shared/referenced";
 
+goTo.file("/packages/server/index.js");
+goTo.file("/packages/client/index.ts");
 verify.baselineGetFileReferences("/packages/shared/src/referenced.ts");

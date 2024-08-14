@@ -36,16 +36,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /file1.d.ts ProjectRootPath: undefined:: Result: /tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tsconfig.json 2000 undefined Project: /tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/tsconfig.json",
-        "reason": "Creating possible configured project for /file1.d.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /tsconfig.json : {
  "rootNames": [
   "/file1.d.ts",
@@ -57,6 +47,16 @@ Info seq  [hh:mm:ss:mss] Config: /tsconfig.json : {
   "configFilePath": "/tsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/tsconfig.json",
+        "reason": "Creating possible configured project for /file1.d.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/lib.d.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/file3.d.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/lib.es6.d.ts 500 undefined WatchType: Closed Script info

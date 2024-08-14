@@ -153,16 +153,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /project/packages/app/lib/index.ts ProjectRootPath: undefined:: Result: /project/packages/app/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /project/packages/app/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /project/packages/app/tsconfig.json 2000 undefined Project: /project/packages/app/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/project/packages/app/tsconfig.json",
-        "reason": "Creating possible configured project for /project/packages/app/lib/index.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /project/packages/app/tsconfig.json : {
  "rootNames": [
   "/project/packages/app/lib/index.ts"
@@ -180,6 +170,16 @@ Info seq  [hh:mm:ss:mss] Config: /project/packages/app/tsconfig.json : {
   "configFilePath": "/project/packages/app/tsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/project/packages/app/tsconfig.json",
+        "reason": "Creating possible configured project for /project/packages/app/lib/index.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /project/packages/app 1 undefined Config: /project/packages/app/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /project/packages/app 1 undefined Config: /project/packages/app/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /project/packages/app/tsconfig.json

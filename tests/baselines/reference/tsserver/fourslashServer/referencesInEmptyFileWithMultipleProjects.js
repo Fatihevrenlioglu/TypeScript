@@ -35,6 +35,14 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /a/tsconfig.json ProjectRootPath: undefined:: Result: /a/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /a/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/tsconfig.json 2000 undefined Project: /a/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /a/tsconfig.json : {
+ "rootNames": [
+  "/a/a.ts"
+ ],
+ "options": {
+  "configFilePath": "/a/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -45,14 +53,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /a/tsconfig.json to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /a/tsconfig.json : {
- "rootNames": [
-  "/a/a.ts"
- ],
- "options": {
-  "configFilePath": "/a/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/a.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /a/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /b/b.ts 500 undefined WatchType: Closed Script info
@@ -319,6 +319,14 @@ Info seq  [hh:mm:ss:mss] FileWatcher:: Close:: WatchInfo: /b/b.ts 500 undefined 
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /b/b.ts ProjectRootPath: undefined:: Result: /b/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /b/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /b/tsconfig.json 2000 undefined Project: /b/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /b/tsconfig.json : {
+ "rootNames": [
+  "/b/b.ts"
+ ],
+ "options": {
+  "configFilePath": "/b/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -329,14 +337,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /b/b.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /b/tsconfig.json : {
- "rootNames": [
-  "/b/b.ts"
- ],
- "options": {
-  "configFilePath": "/b/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /b/tsconfig.json
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /b/tsconfig.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
 Info seq  [hh:mm:ss:mss] Project '/b/tsconfig.json' (Configured)

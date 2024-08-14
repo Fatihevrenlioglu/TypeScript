@@ -33,6 +33,14 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /hunter2/a.ts ProjectRootPath: undefined:: Result: /tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tsconfig.json 2000 undefined Project: /tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /tsconfig.json : {
+ "rootNames": [
+  "/hunter2/a.ts"
+ ],
+ "options": {
+  "configFilePath": "/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -43,14 +51,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /hunter2/a.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /tsconfig.json : {
- "rootNames": [
-  "/hunter2/a.ts"
- ],
- "options": {
-  "configFilePath": "/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /hunter2 1 undefined Config: /tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /hunter2 1 undefined Config: /tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /tsconfig.json

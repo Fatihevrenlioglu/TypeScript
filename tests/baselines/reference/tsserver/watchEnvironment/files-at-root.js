@@ -36,6 +36,15 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: c:/project/file1.ts ProjectRootPath: undefined:: Result: c:/project/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project c:/project/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: c:/project/tsconfig.json 2000 undefined Project: c:/project/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: c:/project/tsconfig.json : {
+ "rootNames": [
+  "c:/project/file1.ts",
+  "c:/project/file2.ts"
+ ],
+ "options": {
+  "configFilePath": "c:/project/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -46,15 +55,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for c:/project/file1.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: c:/project/tsconfig.json : {
- "rootNames": [
-  "c:/project/file1.ts",
-  "c:/project/file2.ts"
- ],
- "options": {
-  "configFilePath": "c:/project/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: c:/project 1 undefined Config: c:/project/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: c:/project 1 undefined Config: c:/project/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: c:/project/file2.ts 500 undefined WatchType: Closed Script info

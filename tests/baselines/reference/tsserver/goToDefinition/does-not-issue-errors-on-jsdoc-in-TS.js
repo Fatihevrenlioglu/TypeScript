@@ -44,16 +44,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /packages/babel-loader/src/index.ts ProjectRootPath: undefined:: Result: /packages/babel-loader/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /packages/babel-loader/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /packages/babel-loader/tsconfig.json 2000 undefined Project: /packages/babel-loader/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/packages/babel-loader/tsconfig.json",
-        "reason": "Creating possible configured project for /packages/babel-loader/src/index.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /packages/babel-loader/tsconfig.json : {
  "rootNames": [
   "/packages/babel-loader/src/index.ts"
@@ -68,6 +58,16 @@ Info seq  [hh:mm:ss:mss] Config: /packages/babel-loader/tsconfig.json : {
   "configFilePath": "/packages/babel-loader/tsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/packages/babel-loader/tsconfig.json",
+        "reason": "Creating possible configured project for /packages/babel-loader/src/index.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /packages/babel-loader/src 1 undefined Config: /packages/babel-loader/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /packages/babel-loader/src 1 undefined Config: /packages/babel-loader/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /packages/babel-loader/tsconfig.json

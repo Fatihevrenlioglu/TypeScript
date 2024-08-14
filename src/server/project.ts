@@ -8,6 +8,7 @@ import {
     arrayToMap,
     BuilderState,
     CachedDirectoryStructureHost,
+    canJsonReportNoInputFiles,
     changeExtension,
     changesAffectModuleResolution,
     clearMap,
@@ -2841,7 +2842,9 @@ export class ConfiguredProject extends Project {
     openFileWatchTriggered = new Map<string, ProgramUpdateLevel>();
 
     /** @internal */
-    canConfigFileJsonReportNoInputFiles = false;
+    parsedCommandLine: ParsedCommandLine | undefined;
+    /** @internal */
+    resolvedChildConfigs?: Set<NormalizedPath>;
 
     private projectReferences: readonly ProjectReference[] | undefined;
 
@@ -2903,7 +2906,7 @@ export class ConfiguredProject extends Project {
 
     /** @internal */
     override getParsedCommandLine(fileName: string) {
-        const configFileName = asNormalizedPath(normalizePath(fileName));
+        const configFileName = toNormalizedPath(fileName);
         const canonicalConfigFilePath = asNormalizedPath(this.projectService.toCanonicalFileName(configFileName));
         // Ensure the config file existience info is cached
         let configFileExistenceInfo = this.projectService.configFileExistenceInfoCache.get(canonicalConfigFilePath);
@@ -2921,7 +2924,7 @@ export class ConfiguredProject extends Project {
 
     /** @internal */
     onReleaseParsedCommandLine(fileName: string) {
-        this.releaseParsedConfig(asNormalizedPath(this.projectService.toCanonicalFileName(asNormalizedPath(normalizePath(fileName)))));
+        this.releaseParsedConfig(asNormalizedPath(this.projectService.toCanonicalFileName(toNormalizedPath(fileName))));
     }
 
     private releaseParsedConfig(canonicalConfigFilePath: NormalizedPath) {
@@ -3073,12 +3076,6 @@ export class ConfiguredProject extends Project {
     }
 
     /** @internal */
-    isSolution() {
-        return this.getRootFilesMap().size === 0 &&
-            !this.canConfigFileJsonReportNoInputFiles;
-    }
-
-    /** @internal */
     override isOrphan(): boolean {
         return !!this.deferredClose;
     }
@@ -3088,8 +3085,15 @@ export class ConfiguredProject extends Project {
     }
 
     /** @internal */
-    updateErrorOnNoInputFiles(fileNames: string[]) {
-        updateErrorForNoInputFiles(fileNames, this.getConfigFilePath(), this.getCompilerOptions().configFile!.configFileSpecs!, this.projectErrors!, this.canConfigFileJsonReportNoInputFiles);
+    updateErrorOnNoInputFiles(parsedCommandLine: ParsedCommandLine) {
+        this.parsedCommandLine = parsedCommandLine;
+        updateErrorForNoInputFiles(
+            parsedCommandLine.fileNames,
+            this.getConfigFilePath(),
+            this.getCompilerOptions().configFile!.configFileSpecs!,
+            this.projectErrors!,
+            canJsonReportNoInputFiles(parsedCommandLine.raw),
+        );
     }
 }
 

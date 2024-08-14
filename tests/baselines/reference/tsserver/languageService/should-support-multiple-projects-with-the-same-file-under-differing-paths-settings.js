@@ -38,16 +38,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /project/a/index.ts ProjectRootPath: undefined:: Result: /project/a/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /project/a/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /project/a/tsconfig.json 2000 undefined Project: /project/a/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/project/a/tsconfig.json",
-        "reason": "Creating possible configured project for /project/a/index.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /project/a/tsconfig.json : {
  "rootNames": [
   "/project/a/index.ts",
@@ -63,6 +53,16 @@ Info seq  [hh:mm:ss:mss] Config: /project/a/tsconfig.json : {
   "configFilePath": "/project/a/tsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/project/a/tsconfig.json",
+        "reason": "Creating possible configured project for /project/a/index.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /project/a/foo.d.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /project/a/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /project/shared.ts 500 undefined WatchType: Closed Script info
@@ -258,16 +258,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /project/b/index.ts ProjectRootPath: undefined:: Result: /project/b/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /project/b/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /project/b/tsconfig.json 2000 undefined Project: /project/b/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/project/b/tsconfig.json",
-        "reason": "Creating possible configured project for /project/b/index.ts to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /project/b/tsconfig.json : {
  "rootNames": [
   "/project/b/index.ts",
@@ -283,6 +273,16 @@ Info seq  [hh:mm:ss:mss] Config: /project/b/tsconfig.json : {
   "configFilePath": "/project/b/tsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/project/b/tsconfig.json",
+        "reason": "Creating possible configured project for /project/b/index.ts to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /project/b/foo.d.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /project/b/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /project/lib.d.ts 500 undefined Project: /project/b/tsconfig.json WatchType: Missing file

@@ -26,6 +26,14 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /a/c/f.ts ProjectRootPath: undefined:: Result: /a/c/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /a/c/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/c/tsconfig.json 2000 undefined Project: /a/c/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /a/c/tsconfig.json : {
+ "rootNames": [
+  "/a/c/f.ts"
+ ],
+ "options": {
+  "configFilePath": "/a/c/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -36,14 +44,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /a/c/f.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /a/c/tsconfig.json : {
- "rootNames": [
-  "/a/c/f.ts"
- ],
- "options": {
-  "configFilePath": "/a/c/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /a/c 1 undefined Config: /a/c/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /a/c 1 undefined Config: /a/c/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /a/c/tsconfig.json
@@ -233,6 +233,14 @@ Info seq  [hh:mm:ss:mss] FileWatcher:: Close:: WatchInfo: /a/b/app.ts 500 undefi
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /a/b/app.ts ProjectRootPath: undefined:: Result: /a/b/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /a/b/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/b/tsconfig.json 2000 undefined Project: /a/b/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /a/b/tsconfig.json : {
+ "rootNames": [
+  "/a/b/app.ts"
+ ],
+ "options": {
+  "configFilePath": "/a/b/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -243,14 +251,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /a/b/app.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /a/b/tsconfig.json : {
- "rootNames": [
-  "/a/b/app.ts"
- ],
- "options": {
-  "configFilePath": "/a/b/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo: /a/b 1 undefined Config: /a/b/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /a/b 1 undefined Config: /a/b/tsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /a/b/tsconfig.json

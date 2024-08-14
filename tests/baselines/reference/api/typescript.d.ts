@@ -3276,6 +3276,7 @@ declare namespace ts {
             private deleteScriptInfo;
             private configFileExists;
             private createConfigFileWatcherForParsedConfig;
+            private ensureConfigFileWatcherForProject;
             private forEachConfigFileLocation;
             private getConfigFileNameForFileFromCache;
             private setConfigFileNameForFileInCache;
@@ -3289,6 +3290,7 @@ declare namespace ts {
             private updateNonInferredProjectFiles;
             private updateRootAndOptionsOfNonInferredProject;
             private reloadFileNamesOfParsedConfig;
+            private setProjectForReload;
             private clearSemanticCache;
             private getOrCreateInferredProjectForProjectRootPathIfEnabled;
             private getOrCreateSingleInferredProjectIfEnabled;
@@ -3335,6 +3337,8 @@ declare namespace ts {
             private getOrCreateOpenScriptInfo;
             private assignProjectToOpenedScriptInfo;
             private tryFindDefaultConfiguredProjectForOpenScriptInfo;
+            private isMatchedByConfig;
+            private tryFindDefaultConfiguredProjectForOpenScriptInfoOrClosedFileInfo;
             private tryFindDefaultConfiguredProjectAndLoadAncestorsForOpenScriptInfo;
             private ensureProjectChildren;
             private cleanupConfiguredProjects;

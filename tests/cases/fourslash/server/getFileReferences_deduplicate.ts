@@ -18,6 +18,8 @@
 // @Filename: /util.ts
 //// export {}
 
+goTo.file("/index.ts");
+goTo.file("/test.ts");
 // util.ts is referenced by index.ts, which is included in tsconfig.build.json and tsconfig.test.json.
 // That reference will be returned from both projects' language services. Test ensures it gets deduplicated.
 verify.baselineGetFileReferences("/util.ts");

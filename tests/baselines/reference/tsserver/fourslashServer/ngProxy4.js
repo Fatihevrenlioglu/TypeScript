@@ -37,16 +37,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /tests/cases/fourslash/server/tsconfig.json ProjectRootPath: undefined:: Result: /tests/cases/fourslash/server/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /tests/cases/fourslash/server/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /tests/cases/fourslash/server/tsconfig.json 2000 undefined Project: /tests/cases/fourslash/server/tsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/tests/cases/fourslash/server/tsconfig.json",
-        "reason": "Creating possible configured project for /tests/cases/fourslash/server/tsconfig.json to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /tests/cases/fourslash/server/tsconfig.json : {
  "rootNames": [
   "/tests/cases/fourslash/server/a.ts"
@@ -60,6 +50,16 @@ Info seq  [hh:mm:ss:mss] Config: /tests/cases/fourslash/server/tsconfig.json : {
   "configFilePath": "/tests/cases/fourslash/server/tsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/tests/cases/fourslash/server/tsconfig.json",
+        "reason": "Creating possible configured project for /tests/cases/fourslash/server/tsconfig.json to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] Enabling plugin diagnostic-adder from candidate paths: /../../..
 Info seq  [hh:mm:ss:mss] Loading diagnostic-adder from /../../.. (resolved to /../../../node_modules)
 Info seq  [hh:mm:ss:mss] Plugin validation succeeded

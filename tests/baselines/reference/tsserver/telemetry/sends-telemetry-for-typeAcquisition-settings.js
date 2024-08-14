@@ -30,16 +30,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /a.js ProjectRootPath: undefined:: Result: /jsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /jsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /jsconfig.json 2000 undefined Project: /jsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/jsconfig.json",
-        "reason": "Creating possible configured project for /a.js to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /jsconfig.json : {
  "rootNames": [
   "/a.js"
@@ -53,6 +43,16 @@ Info seq  [hh:mm:ss:mss] Config: /jsconfig.json : {
   "configFilePath": "/jsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/jsconfig.json",
+        "reason": "Creating possible configured project for /a.js to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Added:: WatchInfo:  1 undefined Config: /jsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo:  1 undefined Config: /jsconfig.json WatchType: Wild card directory
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /jsconfig.json

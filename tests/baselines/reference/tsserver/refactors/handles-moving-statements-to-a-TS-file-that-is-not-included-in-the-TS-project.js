@@ -28,6 +28,14 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /Bar/a.ts ProjectRootPath: undefined:: Result: /Bar/tsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /Bar/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /Bar/tsconfig.json 2000 undefined Project: /Bar/tsconfig.json WatchType: Config file
+Info seq  [hh:mm:ss:mss] Config: /Bar/tsconfig.json : {
+ "rootNames": [
+  "/Bar/a.ts"
+ ],
+ "options": {
+  "configFilePath": "/Bar/tsconfig.json"
+ }
+}
 Info seq  [hh:mm:ss:mss] event:
     {
       "seq": 0,
@@ -38,14 +46,6 @@ Info seq  [hh:mm:ss:mss] event:
         "reason": "Creating possible configured project for /Bar/a.ts to open"
       }
     }
-Info seq  [hh:mm:ss:mss] Config: /Bar/tsconfig.json : {
- "rootNames": [
-  "/Bar/a.ts"
- ],
- "options": {
-  "configFilePath": "/Bar/tsconfig.json"
- }
-}
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /Bar/tsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /Bar/tsconfig.json WatchType: Missing file
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /Bar/tsconfig.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms

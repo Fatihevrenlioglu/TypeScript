@@ -20,16 +20,6 @@ Info seq  [hh:mm:ss:mss] request:
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /a.js ProjectRootPath: undefined:: Result: /jsconfig.json
 Info seq  [hh:mm:ss:mss] Creating configuration project /jsconfig.json
 Info seq  [hh:mm:ss:mss] FileWatcher:: Added:: WatchInfo: /jsconfig.json 2000 undefined Project: /jsconfig.json WatchType: Config file
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/jsconfig.json",
-        "reason": "Creating possible configured project for /a.js to open"
-      }
-    }
 Info seq  [hh:mm:ss:mss] Config: /jsconfig.json : {
  "rootNames": [
   "/a.js"
@@ -43,6 +33,16 @@ Info seq  [hh:mm:ss:mss] Config: /jsconfig.json : {
   "configFilePath": "/jsconfig.json"
  }
 }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/jsconfig.json",
+        "reason": "Creating possible configured project for /a.js to open"
+      }
+    }
 Info seq  [hh:mm:ss:mss] Non TS file size exceeded limit (20971521). Largest files: /a.js:20971521
 Info seq  [hh:mm:ss:mss] event:
     {

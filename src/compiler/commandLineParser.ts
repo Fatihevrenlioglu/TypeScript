@@ -3234,12 +3234,24 @@ function shouldReportNoInputFiles(fileNames: string[], canJsonReportNoInutFiles:
 }
 
 /** @internal */
+export function isSolutionConfig(config: ParsedCommandLine) {
+    return !config.fileNames.length &&
+        hasProperty(config.raw, "references");
+}
+
+/** @internal */
 export function canJsonReportNoInputFiles(raw: any) {
     return !hasProperty(raw, "files") && !hasProperty(raw, "references");
 }
 
 /** @internal */
-export function updateErrorForNoInputFiles(fileNames: string[], configFileName: string, configFileSpecs: ConfigFileSpecs, configParseDiagnostics: Diagnostic[], canJsonReportNoInutFiles: boolean) {
+export function updateErrorForNoInputFiles(
+    fileNames: string[],
+    configFileName: string,
+    configFileSpecs: ConfigFileSpecs,
+    configParseDiagnostics: Diagnostic[],
+    canJsonReportNoInutFiles: boolean,
+) {
     const existingErrors = configParseDiagnostics.length;
     if (shouldReportNoInputFiles(fileNames, canJsonReportNoInutFiles)) {
         configParseDiagnostics.push(getErrorForNoInputFiles(configFileSpecs, configFileName));
@@ -3936,7 +3948,8 @@ export function matchesExclude(
     );
 }
 
-function matchesExcludeWorker(
+/** @internal */
+export function matchesExcludeWorker(
     pathToCheck: string,
     excludeSpecs: readonly string[] | undefined,
     useCaseSensitiveFileNames: boolean,
