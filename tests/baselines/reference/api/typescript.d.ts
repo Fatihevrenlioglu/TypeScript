@@ -2828,7 +2828,6 @@ declare namespace ts {
             private lastReportedFileNames;
             private lastReportedVersion;
             protected projectErrors: Diagnostic[] | undefined;
-            protected isInitialLoadPending: () => boolean;
             private typingsCache;
             private typingWatchers;
             private readonly cancellationToken;
