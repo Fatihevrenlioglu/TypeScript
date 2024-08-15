@@ -231,57 +231,6 @@ Info seq  [hh:mm:ss:mss] event:
         ]
       }
     }
-Info seq  [hh:mm:ss:mss] Creating configuration project /packages/shared/tsconfig.json
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingStart",
-      "body": {
-        "projectName": "/packages/shared/tsconfig.json",
-        "reason": "Creating project referenced in solution /tsconfig.json to find possible configured project for /tsconfig.json to open"
-      }
-    }
-Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /packages/shared/tsconfig.json
-Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /packages/shared/tsconfig.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info seq  [hh:mm:ss:mss] Project '/packages/shared/tsconfig.json' (Configured)
-Info seq  [hh:mm:ss:mss] 	Files (4)
-	/lib.d.ts Text-1 lib.d.ts-Text
-	/lib.decorators.d.ts Text-1 lib.decorators.d.ts-Text
-	/lib.decorators.legacy.d.ts Text-1 lib.decorators.legacy.d.ts-Text
-	/packages/shared/src/referenced.ts Text-1 "export {};"
-
-
-	../../lib.d.ts
-	  Default library for target 'es5'
-	../../lib.decorators.d.ts
-	  Library referenced via 'decorators' from file '../../lib.d.ts'
-	../../lib.decorators.legacy.d.ts
-	  Library referenced via 'decorators.legacy' from file '../../lib.d.ts'
-	src/referenced.ts
-	  Matched by default include pattern '**/*'
-
-Info seq  [hh:mm:ss:mss] -----------------------------------------------
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "projectLoadingFinish",
-      "body": {
-        "projectName": "/packages/shared/tsconfig.json"
-      }
-    }
-Info seq  [hh:mm:ss:mss] event:
-    {
-      "seq": 0,
-      "type": "event",
-      "event": "configFileDiag",
-      "body": {
-        "triggerFile": "/tsconfig.json",
-        "configFile": "/packages/shared/tsconfig.json",
-        "diagnostics": []
-      }
-    }
 Info seq  [hh:mm:ss:mss] Creating configuration project /packages/client/tsconfig.json
 Info seq  [hh:mm:ss:mss] event:
     {
@@ -337,6 +286,57 @@ Info seq  [hh:mm:ss:mss] event:
         "diagnostics": []
       }
     }
+Info seq  [hh:mm:ss:mss] Creating configuration project /packages/shared/tsconfig.json
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingStart",
+      "body": {
+        "projectName": "/packages/shared/tsconfig.json",
+        "reason": "Creating project referenced in solution /tsconfig.json to find possible configured project for /tsconfig.json to open"
+      }
+    }
+Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /packages/shared/tsconfig.json
+Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /packages/shared/tsconfig.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info seq  [hh:mm:ss:mss] Project '/packages/shared/tsconfig.json' (Configured)
+Info seq  [hh:mm:ss:mss] 	Files (4)
+	/lib.d.ts Text-1 lib.d.ts-Text
+	/lib.decorators.d.ts Text-1 lib.decorators.d.ts-Text
+	/lib.decorators.legacy.d.ts Text-1 lib.decorators.legacy.d.ts-Text
+	/packages/shared/src/referenced.ts Text-1 "export {};"
+
+
+	../../lib.d.ts
+	  Default library for target 'es5'
+	../../lib.decorators.d.ts
+	  Library referenced via 'decorators' from file '../../lib.d.ts'
+	../../lib.decorators.legacy.d.ts
+	  Library referenced via 'decorators.legacy' from file '../../lib.d.ts'
+	src/referenced.ts
+	  Matched by default include pattern '**/*'
+
+Info seq  [hh:mm:ss:mss] -----------------------------------------------
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "projectLoadingFinish",
+      "body": {
+        "projectName": "/packages/shared/tsconfig.json"
+      }
+    }
+Info seq  [hh:mm:ss:mss] event:
+    {
+      "seq": 0,
+      "type": "event",
+      "event": "configFileDiag",
+      "body": {
+        "triggerFile": "/tsconfig.json",
+        "configFile": "/packages/shared/tsconfig.json",
+        "diagnostics": []
+      }
+    }
 Info seq  [hh:mm:ss:mss] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
 Info seq  [hh:mm:ss:mss] Project '/dev/null/inferredProject1*' (Inferred)
@@ -365,12 +365,12 @@ Info seq  [hh:mm:ss:mss] Project '/packages/server/tsconfig.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (6)
 
 Info seq  [hh:mm:ss:mss] -----------------------------------------------
-Info seq  [hh:mm:ss:mss] Project '/packages/shared/tsconfig.json' (Configured)
-Info seq  [hh:mm:ss:mss] 	Files (4)
-
-Info seq  [hh:mm:ss:mss] -----------------------------------------------
 Info seq  [hh:mm:ss:mss] Project '/packages/client/tsconfig.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (5)
+
+Info seq  [hh:mm:ss:mss] -----------------------------------------------
+Info seq  [hh:mm:ss:mss] Project '/packages/shared/tsconfig.json' (Configured)
+Info seq  [hh:mm:ss:mss] 	Files (4)
 
 Info seq  [hh:mm:ss:mss] -----------------------------------------------
 Info seq  [hh:mm:ss:mss] Project '/dev/null/inferredProject1*' (Inferred)
@@ -452,22 +452,22 @@ ScriptInfos::
     version: Text-1
     containingProjects: 4
         /packages/server/tsconfig.json
-        /packages/shared/tsconfig.json
         /packages/client/tsconfig.json
+        /packages/shared/tsconfig.json
         /dev/null/inferredProject1*
 /lib.decorators.d.ts *new*
     version: Text-1
     containingProjects: 4
         /packages/server/tsconfig.json
-        /packages/shared/tsconfig.json
         /packages/client/tsconfig.json
+        /packages/shared/tsconfig.json
         /dev/null/inferredProject1*
 /lib.decorators.legacy.d.ts *new*
     version: Text-1
     containingProjects: 4
         /packages/server/tsconfig.json
-        /packages/shared/tsconfig.json
         /packages/client/tsconfig.json
+        /packages/shared/tsconfig.json
         /dev/null/inferredProject1*
 /packages/client/index.ts *new*
     version: Text-1
@@ -485,8 +485,8 @@ ScriptInfos::
     version: Text-1
     containingProjects: 3
         /packages/server/tsconfig.json
-        /packages/shared/tsconfig.json
         /packages/client/tsconfig.json
+        /packages/shared/tsconfig.json
 /tsconfig.json (Open) *new*
     version: SVC-1-0
     containingProjects: 1

@@ -94,6 +94,7 @@ Projects::
     projectStateVersion: 1
     projectProgramVersion: 0
     dirty: true
+    initialLoadPending: true
 
 Before request
 
@@ -135,6 +136,7 @@ Projects::
     projectStateVersion: 1
     projectProgramVersion: 0
     dirty: true
+    initialLoadPending: true
     isOrphan: true *changed*
     deferredClose: true *changed*
 
@@ -228,6 +230,7 @@ Projects::
     projectStateVersion: 1
     projectProgramVersion: 0
     dirty: true
+    initialLoadPending: true
     isOrphan: true
     noOpenRef: true *changed*
     deferredClose: true
@@ -443,6 +446,7 @@ Projects::
     projectStateVersion: 1
     projectProgramVersion: 0
     dirty: true
+    initialLoadPending: true
     isClosed: true *changed*
     isOrphan: true
     noOpenRef: true

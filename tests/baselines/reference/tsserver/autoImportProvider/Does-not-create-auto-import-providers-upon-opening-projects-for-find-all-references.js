@@ -294,6 +294,7 @@ Projects::
     projectStateVersion: 1
     projectProgramVersion: 0
     dirty: true
+    initialLoadPending: true
 
 ScriptInfos::
 /node_modules/@angular/forms/forms.d.ts *new*
@@ -740,6 +741,7 @@ Projects::
     projectStateVersion: 1
     projectProgramVersion: 1 *changed*
     dirty: false *changed*
+    initialLoadPending: false *changed*
     originalConfiguredProjects: 3 *changed*
         /packages/b/tsconfig.json *new*
         /tsconfig.json *new*
