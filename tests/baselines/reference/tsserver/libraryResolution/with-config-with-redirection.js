@@ -92,36 +92,6 @@ export const z = 10
   }
 }
 
-//// [/home/src/tslibs/ts/lib/lib.es5.d.ts]
-/// <reference no-default-lib="true"/>
-interface Boolean {}
-interface Function {}
-interface CallableFunction {}
-interface NewableFunction {}
-interface IArguments {}
-interface Number { toExponential: any; }
-interface Object {}
-interface RegExp {}
-interface String { charAt: any; }
-interface Array<T> { length: number; [n: number]: T; }
-interface ReadonlyArray<T> {}
-declare const console: { log(msg: any): void; };
-
-//// [/home/src/tslibs/ts/lib/lib.esnext.d.ts]
-/// <reference no-default-lib="true"/>
-interface Boolean {}
-interface Function {}
-interface CallableFunction {}
-interface NewableFunction {}
-interface IArguments {}
-interface Number { toExponential: any; }
-interface Object {}
-interface RegExp {}
-interface String { charAt: any; }
-interface Array<T> { length: number; [n: number]: T; }
-interface ReadonlyArray<T> {}
-declare const console: { log(msg: any): void; };
-
 //// [/home/src/tslibs/ts/lib/lib.dom.d.ts]
 interface DOMInterface { }
 
@@ -168,7 +138,7 @@ declare const console: { log(msg: any): void; };
 interface DOMInterface { }
 
 //// [/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts]
-interface WebworkerInterface { }
+interface WebWorkerInterface { }
 
 //// [/home/src/workspace/projects/node_modules/@typescript/lib-scripthost/index.d.ts]
 interface ScriptHostInterface { }
@@ -361,7 +331,7 @@ Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /ho
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /home/src/workspace/projects/project1/tsconfig.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed:: *ms
 Info seq  [hh:mm:ss:mss] Project '/home/src/workspace/projects/project1/tsconfig.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (10)
-	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebworkerInterface { }"
+	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebWorkerInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-scripthost/index.d.ts Text-1 "interface ScriptHostInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-es5/index.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }\ninterface ReadonlyArray<T> {}\ndeclare const console: { log(msg: any): void; };"
 	/home/src/workspace/projects/node_modules/@typescript/lib-dom/index.d.ts Text-1 "interface DOMInterface { }"
@@ -578,6 +548,7 @@ ScriptInfos::
     containingProjects: 1
         /home/src/workspace/projects/project1/tsconfig.json
 
+delete redirect file dom
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Triggered with /home/src/workspace/projects/node_modules/@typescript/lib-dom/index.d.ts :: WatchInfo: /home/src/workspace/projects/node_modules 1 undefined Project: /home/src/workspace/projects/project1/tsconfig.json WatchType: Failed Lookup Locations
 Info seq  [hh:mm:ss:mss] Scheduled: /home/src/workspace/projects/project1/tsconfig.jsonFailedLookupInvalidation
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Triggered with /home/src/workspace/projects/node_modules/@typescript/lib-dom/index.d.ts :: WatchInfo: /home/src/workspace/projects/node_modules 1 undefined Project: /home/src/workspace/projects/project1/tsconfig.json WatchType: Failed Lookup Locations
@@ -753,7 +724,7 @@ Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /home/src/workspa
 Info seq  [hh:mm:ss:mss] Project '/home/src/workspace/projects/project1/tsconfig.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (10)
 	/home/src/tslibs/ts/lib/lib.dom.d.ts Text-1 "interface DOMInterface { }"
-	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebworkerInterface { }"
+	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebWorkerInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-scripthost/index.d.ts Text-1 "interface ScriptHostInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-es5/index.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }\ninterface ReadonlyArray<T> {}\ndeclare const console: { log(msg: any): void; };"
 	/home/src/workspace/projects/project1/core.d.ts Text-1 "export const core = 10;"
@@ -920,6 +891,7 @@ ScriptInfos::
     containingProjects: 1
         /home/src/workspace/projects/project1/tsconfig.json
 
+edit file
 Info seq  [hh:mm:ss:mss] FileWatcher:: Triggered with /home/src/workspace/projects/project1/file.ts 1:: WatchInfo: /home/src/workspace/projects/project1/file.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Scheduled: /home/src/workspace/projects/project1/tsconfig.json
 Info seq  [hh:mm:ss:mss] Scheduled: *ensureProjectForOpenFiles*
@@ -1023,7 +995,7 @@ Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /home/src/workspa
 Info seq  [hh:mm:ss:mss] Project '/home/src/workspace/projects/project1/tsconfig.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (10)
 	/home/src/tslibs/ts/lib/lib.dom.d.ts Text-1 "interface DOMInterface { }"
-	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebworkerInterface { }"
+	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebWorkerInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-scripthost/index.d.ts Text-1 "interface ScriptHostInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-es5/index.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }\ninterface ReadonlyArray<T> {}\ndeclare const console: { log(msg: any): void; };"
 	/home/src/workspace/projects/project1/core.d.ts Text-1 "export const core = 10;"
@@ -1119,6 +1091,7 @@ ScriptInfos::
     containingProjects: 1
         /home/src/workspace/projects/project1/tsconfig.json
 
+delete core
 Info seq  [hh:mm:ss:mss] FileWatcher:: Triggered with /home/src/workspace/projects/project1/core.d.ts 2:: WatchInfo: /home/src/workspace/projects/project1/core.d.ts 500 undefined WatchType: Closed Script info
 Info seq  [hh:mm:ss:mss] Scheduled: /home/src/workspace/projects/project1/tsconfig.json
 Info seq  [hh:mm:ss:mss] Scheduled: *ensureProjectForOpenFiles*
@@ -1226,7 +1199,7 @@ Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /home/src/workspa
 Info seq  [hh:mm:ss:mss] Project '/home/src/workspace/projects/project1/tsconfig.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (9)
 	/home/src/tslibs/ts/lib/lib.dom.d.ts Text-1 "interface DOMInterface { }"
-	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebworkerInterface { }"
+	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebWorkerInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-scripthost/index.d.ts Text-1 "interface ScriptHostInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-es5/index.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }\ninterface ReadonlyArray<T> {}\ndeclare const console: { log(msg: any): void; };"
 	/home/src/workspace/projects/project1/file.ts Text-2 "export const file = 10;export const xyz = 10;"
@@ -1295,6 +1268,7 @@ Projects::
     projectProgramVersion: 3 *changed*
     dirty: false *changed*
 
+write redirect file dom
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Triggered with /home/src/workspace/projects/node_modules/@typescript/lib-dom/index.d.ts :: WatchInfo: /home/src/workspace/projects/node_modules 1 undefined Project: /home/src/workspace/projects/project1/tsconfig.json WatchType: Failed Lookup Locations
 Info seq  [hh:mm:ss:mss] Scheduled: /home/src/workspace/projects/project1/tsconfig.jsonFailedLookupInvalidation
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Triggered with /home/src/workspace/projects/node_modules/@typescript/lib-dom/index.d.ts :: WatchInfo: /home/src/workspace/projects/node_modules 1 undefined Project: /home/src/workspace/projects/project1/tsconfig.json WatchType: Failed Lookup Locations
@@ -1459,7 +1433,7 @@ Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /ho
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /home/src/workspace/projects/project1/tsconfig.json projectStateVersion: 5 projectProgramVersion: 3 structureChanged: true structureIsReused:: SafeModules Elapsed:: *ms
 Info seq  [hh:mm:ss:mss] Project '/home/src/workspace/projects/project1/tsconfig.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (9)
-	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebworkerInterface { }"
+	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebWorkerInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-scripthost/index.d.ts Text-1 "interface ScriptHostInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-es5/index.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }\ninterface ReadonlyArray<T> {}\ndeclare const console: { log(msg: any): void; };"
 	/home/src/workspace/projects/node_modules/@typescript/lib-dom/index.d.ts Text-1 "interface DOMInterface { }"
@@ -1625,6 +1599,7 @@ ScriptInfos::
     containingProjects: 1
         /home/src/workspace/projects/project1/tsconfig.json
 
+change program options to update module resolution
 Info seq  [hh:mm:ss:mss] FileWatcher:: Triggered with /home/src/workspace/projects/project1/tsconfig.json 1:: WatchInfo: /home/src/workspace/projects/project1/tsconfig.json 2000 undefined Project: /home/src/workspace/projects/project1/tsconfig.json WatchType: Config file
 Info seq  [hh:mm:ss:mss] Scheduled: /home/src/workspace/projects/project1/tsconfig.json
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /home/src/workspace/projects/project1/index.ts ProjectRootPath: undefined:: Result: /home/src/workspace/projects/project1/tsconfig.json
@@ -1742,7 +1717,7 @@ Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /ho
 Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /home/src/workspace/projects/project1/tsconfig.json projectStateVersion: 6 projectProgramVersion: 4 structureChanged: true structureIsReused:: Not Elapsed:: *ms
 Info seq  [hh:mm:ss:mss] Project '/home/src/workspace/projects/project1/tsconfig.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (9)
-	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebworkerInterface { }"
+	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebWorkerInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-scripthost/index.d.ts Text-1 "interface ScriptHostInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-es5/index.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }\ninterface ReadonlyArray<T> {}\ndeclare const console: { log(msg: any): void; };"
 	/home/src/workspace/projects/node_modules/@typescript/lib-dom/index.d.ts Text-1 "interface DOMInterface { }"
@@ -1857,6 +1832,11 @@ Projects::
     projectProgramVersion: 5 *changed*
     dirty: false *changed*
 
+Before running Timeout callback:: count: 0
+
+After running Timeout callback:: count: 0
+
+change program options to update module resolution and also update lib file
 Info seq  [hh:mm:ss:mss] FileWatcher:: Triggered with /home/src/workspace/projects/project1/tsconfig.json 1:: WatchInfo: /home/src/workspace/projects/project1/tsconfig.json 2000 undefined Project: /home/src/workspace/projects/project1/tsconfig.json WatchType: Config file
 Info seq  [hh:mm:ss:mss] Scheduled: /home/src/workspace/projects/project1/tsconfig.json
 Info seq  [hh:mm:ss:mss] getConfigFileNameForFile:: File: /home/src/workspace/projects/project1/index.ts ProjectRootPath: undefined:: Result: /home/src/workspace/projects/project1/tsconfig.json
@@ -2062,7 +2042,7 @@ Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /home/src/workspa
 Info seq  [hh:mm:ss:mss] Project '/home/src/workspace/projects/project1/tsconfig.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (9)
 	/home/src/tslibs/ts/lib/lib.dom.d.ts Text-1 "interface DOMInterface { }"
-	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebworkerInterface { }"
+	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebWorkerInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-scripthost/index.d.ts Text-1 "interface ScriptHostInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-es5/index.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }\ninterface ReadonlyArray<T> {}\ndeclare const console: { log(msg: any): void; };"
 	/home/src/workspace/projects/project1/file.ts Text-2 "export const file = 10;export const xyz = 10;"
@@ -2250,6 +2230,11 @@ ScriptInfos::
     containingProjects: 1
         /home/src/workspace/projects/project1/tsconfig.json
 
+Before running Timeout callback:: count: 0
+
+After running Timeout callback:: count: 0
+
+delete redirect file webworker
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Triggered with /home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts :: WatchInfo: /home/src/workspace/projects/node_modules 1 undefined Project: /home/src/workspace/projects/project1/tsconfig.json WatchType: Failed Lookup Locations
 Info seq  [hh:mm:ss:mss] Scheduled: /home/src/workspace/projects/project1/tsconfig.jsonFailedLookupInvalidation
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Triggered with /home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts :: WatchInfo: /home/src/workspace/projects/node_modules 1 undefined Project: /home/src/workspace/projects/project1/tsconfig.json WatchType: Failed Lookup Locations
@@ -2567,6 +2552,7 @@ ScriptInfos::
     containingProjects: 1
         /home/src/workspace/projects/project1/tsconfig.json
 
+write redirect file webworker
 Info seq  [hh:mm:ss:mss] DirectoryWatcher:: Triggered with /home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts :: WatchInfo: /home/src/workspace/projects/node_modules 1 undefined Project: /home/src/workspace/projects/project1/tsconfig.json WatchType: Failed Lookup Locations
 Info seq  [hh:mm:ss:mss] Scheduled: /home/src/workspace/projects/project1/tsconfig.jsonFailedLookupInvalidation
 Info seq  [hh:mm:ss:mss] Elapsed:: *ms DirectoryWatcher:: Triggered with /home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts :: WatchInfo: /home/src/workspace/projects/node_modules 1 undefined Project: /home/src/workspace/projects/project1/tsconfig.json WatchType: Failed Lookup Locations
@@ -2719,7 +2705,7 @@ Info seq  [hh:mm:ss:mss] Finishing updateGraphWorker: Project: /home/src/workspa
 Info seq  [hh:mm:ss:mss] Project '/home/src/workspace/projects/project1/tsconfig.json' (Configured)
 Info seq  [hh:mm:ss:mss] 	Files (9)
 	/home/src/tslibs/ts/lib/lib.dom.d.ts Text-1 "interface DOMInterface { }"
-	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-2 "interface WebWorkerInterface { }"
+	/home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts Text-1 "interface WebWorkerInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-scripthost/index.d.ts Text-1 "interface ScriptHostInterface { }"
 	/home/src/workspace/projects/node_modules/@typescript/lib-es5/index.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }\ninterface ReadonlyArray<T> {}\ndeclare const console: { log(msg: any): void; };"
 	/home/src/workspace/projects/project1/file.ts Text-2 "export const file = 10;export const xyz = 10;"
@@ -2857,7 +2843,7 @@ ScriptInfos::
     containingProjects: 1
         /home/src/workspace/projects/project1/tsconfig.json
 /home/src/workspace/projects/node_modules/@typescript/lib-webworker/index.d.ts *changed*
-    version: Text-2 *changed*
+    version: Text-1
     pendingReloadFromDisk: false *changed*
     containingProjects: 1 *changed*
         /home/src/workspace/projects/project1/tsconfig.json *new*
