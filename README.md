@@ -1,50 +1,118 @@
-
-# TypeScript
-
-[![GitHub Actions CI](https://github.com/microsoft/TypeScript/workflows/CI/badge.svg)](https://github.com/microsoft/TypeScript/actions?query=workflow%3ACI)
-[![npm version](https://badge.fury.io/js/typescript.svg)](https://www.npmjs.com/package/typescript)
-[![Downloads](https://img.shields.io/npm/dm/typescript.svg)](https://www.npmjs.com/package/typescript)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/microsoft/TypeScript/badge)](https://securityscorecards.dev/viewer/?uri=github.com/microsoft/TypeScript)
-
-
-[TypeScript](https://www.typescriptlang.org/) is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript. Try it out at the [playground](https://www.typescriptlang.org/play/), and stay up to date via [our blog](https://blogs.msdn.microsoft.com/typescript) and [Twitter account](https://twitter.com/typescript).
-
-Find others who are using TypeScript at [our community page](https://www.typescriptlang.org/community/).
-
-## Installing
-
-For the latest stable version:
-
-```bash
-npm install -D typescript
-```
-
-For our nightly builds:
-
-```bash
-npm install -D typescript@next
-```
-
-## Contribute
-
-There are many ways to [contribute](https://github.com/microsoft/TypeScript/blob/main/CONTRIBUTING.md) to TypeScript.
-* [Submit bugs](https://github.com/microsoft/TypeScript/issues) and help us verify fixes as they are checked in.
-* Review the [source code changes](https://github.com/microsoft/TypeScript/pulls).
-* Engage with other TypeScript users and developers on [StackOverflow](https://stackoverflow.com/questions/tagged/typescript).
-* Help each other in the [TypeScript Community Discord](https://discord.gg/typescript).
-* Join the [#typescript](https://twitter.com/search?q=%23TypeScript) discussion on Twitter.
-* [Contribute bug fixes](https://github.com/microsoft/TypeScript/blob/main/CONTRIBUTING.md).
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see
-the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com)
-with any additional questions or comments.
-
-## Documentation
-
-*  [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
-*  [Programming handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
-*  [Homepage](https://www.typescriptlang.org/)
-
-## Roadmap
-
-For details on our planned features and future direction, please refer to our [roadmap](https://github.com/microsoft/TypeScript/wiki/Roadmap).
+['176.89.248.142',
+ '141.196.24.63',
+ '2a02:4e0:2d48:1584:e035:8a48:fcde:da90',
+ '5.27.3.160',
+ '37.120.236.230',
+ '176.238.168.32',
+ '2a02:4e0:2d48:1584:79d6:32b9:bbfd:8252',
+ '2a02:4e0:2d48:1584:dcdd:7e6b:89e:5865',
+ '5.25.159.225',
+ '2a02:4e0:2db4:1691:b4c5:77b6:2c95:34e6',
+ '5.25.147.201',
+ '2a02:4e0:2db4:1691:907a:ee7d:a13e:2ac7',
+ '40.125.107.83',
+ '65.52.16.117',
+ '52.177.60.141',
+ '20.232.223.218',
+ '37.120.236.199',
+ '146.70.176.164',
+ '88.235.242.80',
+ '37.120.236.197',
+ '146.70.176.149',
+ '37.120.236.233',
+ '2603:1026:208:c:0:0:0:5',
+ '31.142.240.18',
+ '176.238.194.27',
+ '176.238.149.235',
+ '176.238.239.44',
+ '176.238.154.111',
+ '176.89.161.108',
+ '88.248.22.9',
+ '31.142.249.110',
+ '77.67.236.161',
+ '178.244.4.124',
+ '31.142.252.126',
+ '31.142.195.73',
+ '178.244.7.189',
+ '212.175.130.20',
+ '2a09:bac2:57d4:2464:0:0:3a0:45',
+ 'Invalid IP address',
+ '31.142.135.30',
+ '2603:1026:c0a:cd:0:0:0:5',
+ '178.247.109.212',
+ '176.238.158.66',
+ '176.89.227.176',
+ '188.58.117.5',
+ '178.240.18.231',
+ '31.143.1.120',
+ '176.89.122.214',
+ '78.180.72.141',
+ '2a09:bac3:57c2:187:0:0:27:d9',
+ '31.143.18.45',
+ '176.227.36.148',
+ '176.227.43.216',
+ '178.243.245.5',
+ '2a09:bac2:57c3:187:0:0:27:bb',
+ '2a02:26f7:c8d0:4000:d3c9:d50c:e7fc:8fa6',
+ '139.144.77.235',
+ '176.227.60.219',
+ '31.143.28.180',
+ '178.244.129.67',
+ '176.238.246.174',
+ '178.243.12.105',
+ '188.57.11.180',
+ '176.238.145.150',
+ '2603:1026:c0a:806:0:0:0:5',
+ '2603:1026:c03:285f:0:0:0:5',
+ '2a09:bac2:57d4:2e6:0:0:4a:79',
+ '188.57.10.115',
+ '176.238.235.167',
+ '77.67.245.201',
+ '178.247.111.152',
+ '176.238.148.248',
+ '178.247.39.21',
+ '176.238.234.235',
+ '141.196.18.55',
+ '176.238.173.237',
+ '88.235.243.100',
+ '176.89.217.227',
+ '178.244.44.21',
+ '141.196.19.134',
+ '178.247.107.132',
+ '176.238.214.61',
+ '178.244.93.99',
+ '176.238.249.220',
+ '31.142.198.124',
+ '176.238.134.15',
+ '178.247.13.228',
+ '178.244.34.134',
+ '178.244.47.158',
+ '188.57.19.29',
+ '2603:1026:c01:44:0:0:0:5',
+ '188.57.22.164',
+ '178.244.77.213',
+ '176.238.134.243',
+ '2600:1900:0:2d01:0:0:0:2b00',
+ '2600:1900:0:2d07:0:0:0:3400',
+ '178.240.96.74',
+ '176.237.242.22',
+ '176.238.241.129',
+ '2603:1026:c0a:84c:0:0:0:5',
+ '178.241.74.88',
+ '31.143.233.139',
+ '188.57.126.110',
+ '176.227.46.52',
+ '188.58.81.244',
+ '188.58.106.47',
+ '31.143.19.40',
+ '31.143.33.174',
+ '78.167.202.69',
+ '188.57.110.77',
+ '78.176.207.178',
+ '178.240.3.251',
+ '77.67.164.28',
+ '188.58.70.22',
+ '176.89.103.240',
+ '31.143.30.2',
+ '178.243.222.164',
+ '141.196.35.149']
