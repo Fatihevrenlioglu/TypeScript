@@ -1,7 +1,6 @@
 import requests
 
-# API Key (Senin API anahtarını buraya yerleştir)
-api_key = '52ece52b6f3e469a8ed599c547af1591'
+# API Key (52ece52b6f3e469a8ed599c547af1591)
 
 # Kontrol edilecek IP adresleri listesi
 ips_for_geolocation = [
