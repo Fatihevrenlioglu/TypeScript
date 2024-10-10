@@ -1,4 +1,11 @@
-['176.89.248.142',
+# Extracting the unique IP addresses from the dataframe
+unique_ips = df['IP Address'].unique()
+
+# Creating a formatted list of IPs for user to use with the geolocation API
+ips_for_geolocation = list(unique_ips)
+
+ips_for_geolocation
+176.89.248.142',
  '141.196.24.63',
  '2a02:4e0:2d48:1584:e035:8a48:fcde:da90',
  '5.27.3.160',
